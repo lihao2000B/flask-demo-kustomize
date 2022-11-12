@@ -31,7 +31,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-        if: ${{ github.event.inputs.image }}
+        #if: ${{ github.event.inputs.image }}
       
       - name: kustomize edit
         if: ${{ github.event.inputs.image }}
