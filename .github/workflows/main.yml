@@ -36,7 +36,7 @@ jobs:
       - name: kustomize edit
         #if: ${{ github.event.inputs.image }}
         run: |
-          git config --global --add safe.directory /home/runner/work/flask-demo-kustomize/flask-demo-kustomize
+          git config --global --add safe.directory "*"
           #curl -s "https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/hack/install_kustomize.sh"  | bash
           #cd secret
           #kustomize edit set image ${{ github.event.inputs.image }}:${{ github.event.inputs.sha-tag }}
