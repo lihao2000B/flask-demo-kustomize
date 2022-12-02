@@ -28,7 +28,7 @@ spec:
       properties:
         clusters: ["local"]
         # 此命名空间需要在应用部署前完成创建
-        namespace: "prod"
+        namespace: "test"
     - name: deploy-ha
       type: override
       properties:
@@ -37,7 +37,7 @@ spec:
             traits:
               - type: scaler
                 properties:
-                  replicas: 2
+                  replicas: 1
   workflow:
     steps:
       - name: deploy2default
